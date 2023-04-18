@@ -20,15 +20,15 @@ public class PersonDataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         if (personRepository.count() == 0) {
-            List<Person> people = List.of(
-                    new Person(null, "Austin","Perrine", LocalDate.of(1995, 8, 22), "akperrine@gmail",
-                            new BigDecimal("200000")),
-                    new Person(null, "Michelle","Perrine", LocalDate.of(1995, 8, 1), "akperrine@gmail",
-                            new BigDecimal("35000")),
-                    new Person(null, "Jack","Perrine", LocalDate.of(2020, 5, 1), "akperrine@gmail",
-                            new BigDecimal("10000"))
-            );
-            personRepository.saveAll(people);
+//            List<Person> people = List.of(
+//                    new Person(null, "Austin","Perrine", LocalDate.of(1995, 8, 22), "akperrine@gmail",
+//                            new BigDecimal("200000")),
+//                    new Person(null, "Michelle","Perrine", LocalDate.of(1995, 8, 1), "akperrine@gmail",
+//                            new BigDecimal("35000")),
+//                    new Person(null, "Jack","Perrine", LocalDate.of(2020, 5, 1), "akperrine@gmail",
+//                            new BigDecimal("10000"))
+//            );
+//            personRepository.saveAll(people);
         }
     }
 }
